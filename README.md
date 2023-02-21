@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Kids Art App 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Kids Art App is a React frontend application where the user can store an image and description of their childs artwork to display to friends and family.
 
-## Available Scripts
+### [Link to Kids Art App](kids-art-app-frontend.netlify.app)
 
-In the project directory, you can run:
+### Technologies Used
 
-### `npm start`
+- React
+- react-router-dom
+- django
+- CSS
+- 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Component Architecture
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[![](https://mermaid.ink/img/pako:eNpl0LEOwiAQBuBXITdponFnMKlFjZODOokDgdM2ttAgjRrju3tATGxkgv8DjuMF2hkEDufG3XWlfGB7IS2jURyLrjux6XS-GG370GAYZ1jEjJVHCTMJp59MxIiumPHaDGUZRXtUAYfAVlH6zpD8H2PrqAap9lDLpBtr8JEDkYJd5e55vUxrekuZihY61M5mWn3pkKr-0vpLIpXMBBNo0beqNvRNr7hRQqiwpU44TY3yVwnSvmmf6oPbPa0GHnyPE8h9iVpdvGqBn1Vzw_cHKfhttQ?type=png)](https://mermaid.live/edit#pako:eNpl0LEOwiAQBuBXITdponFnMKlFjZODOokDgdM2ttAgjRrju3tATGxkgv8DjuMF2hkEDufG3XWlfGB7IS2jURyLrjux6XS-GG370GAYZ1jEjJVHCTMJp59MxIiumPHaDGUZRXtUAYfAVlH6zpD8H2PrqAap9lDLpBtr8JEDkYJd5e55vUxrekuZihY61M5mWn3pkKr-0vpLIpXMBBNo0beqNvRNr7hRQqiwpU44TY3yVwnSvmmf6oPbPa0GHnyPE8h9iVpdvGqBn1Vzw_cHKfhttQ)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend Route Table
 
-### `npm run build`
+| Route    | Element    | Loader |Action| Description|
+| :---    | :----: | :----:    | :----   |:----   |
+|/        |Index  | indexLoader|         |Display a list of art|
+|/art/:id |Show   | artLoader  |          |Display a specific piece of art|
+|/create  |Create |         | artCreateAction|Handles submission of create form for art|
+|/update/:id  |Update |      |artUpdateAction|Handles submission of update form for art|
+|/delete/:id |Delete |       |artDeleteAction|Handles submission of delete form for art|
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Mockups
+![mockups here](./public/project4wireframe1.jpeg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Trello Workspace
+[Trello Board](https://trello.com/b/ORFSAKW2/kids-art-app-project)
