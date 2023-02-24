@@ -19,7 +19,7 @@ const Show = (props) => {
       <h2>{post.image_url}</h2>
       <div>
         <h2>Update this piece of art</h2>
-        <Form action={`/upddate/${post.id}`} method='post'>
+        <Form action={`/update/${post.id}`} method='post'>
       <input type="text" 
       name="title" 
       placeholder="enter a title here" 
@@ -36,6 +36,9 @@ const Show = (props) => {
       defaultValue={post.image_url}
       />
       <button>Submit</button>
+      </Form>
+      <Form action={`/delete/${post.id}`} method="post">
+        <button>Delete</button>
       </Form>
       </div>
       <Link to="/">

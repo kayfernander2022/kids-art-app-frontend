@@ -2,7 +2,7 @@ import url from "./url"
 import { redirect } from "react-router-dom"
 
 
-
+//Create Action
 export async function createAction ({request}){
     // get form data
     const formData = await request.formData()
@@ -30,12 +30,9 @@ export async function createAction ({request}){
 
 
 //Update Action
-export const updateAction = async ({request, params}) => {
+export async function updateAction ({request, params}){
     // get form data
     const formData = await request.formData()
-
-    // get art id
-    const id = params.id
 
     // construct art
     const updatedKidsArt = {
@@ -53,22 +50,22 @@ export const updateAction = async ({request, params}) => {
         body: JSON.stringify(updatedKidsArt)
     })
 
-    // redirect back to show page page
+    // redirect back to index
     return redirect("/")
 }
 
 
 
-//deleteAction => delete a todo from form submissions to `/delete/:id`
-export const deleteAction = async ({params}) => {
-    // get todo id
+//deleteAction => delete art from form submissions to `/delete/:id`
+export async function deleteAction({params}){
+    // get art id
     const id = params.id
 
     // send request to backend
-    await fetch(URL + `/todos/${id}/`, {
+    await fetch(url + id + "/", {
         method: "delete",
     })
 
-    // redirect back to show page page
+    // redirect 
     return redirect("/")
 }
