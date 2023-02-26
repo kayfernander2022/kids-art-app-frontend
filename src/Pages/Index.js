@@ -1,6 +1,6 @@
 import { useLoaderData, Form} from "react-router-dom";
 import Post from "../components/Post";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { IKContext, IKUpload } from 'imagekitio-react'
 import { authUrl } from '../url';
 
