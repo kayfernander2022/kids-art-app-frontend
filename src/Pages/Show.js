@@ -1,5 +1,6 @@
 import { Link, useLoaderData, Form } from "react-router-dom";
 
+
 const Show = (props) => {
   const post = useLoaderData()
 
@@ -30,10 +31,10 @@ const Show = (props) => {
       placeholder="tell us about your work of art..." 
       defaultValue={post.description}
       />
-      <input type="text" 
+      <input type="file" 
       name="url" 
-      placeholder="enter a link here" 
-      defaultValue={post.image_url}
+      placeholder="enter url here" 
+      //defaultValue={post.image_url}
       />
       <button>Submit</button>
       </Form>

@@ -1,4 +1,4 @@
-import url from "./url"
+import { url } from "./url"
 import { redirect } from "react-router-dom"
 
 
@@ -11,9 +11,10 @@ export async function createAction ({request}){
     const newKidsArt = {
         title: formData.get("title"),
         description: formData.get("description"),
-        image_url: formData.get("image_url")
+        image_url: formData.get('image_url')
     }
 
+    console.log(url);
     // send request to backend
     await fetch(url, {
         method: "post",

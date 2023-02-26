@@ -1,4 +1,4 @@
-import url from "./url";
+import { url } from "./url";
 
 export async function indexLoader(){
   const response = await fetch(url)

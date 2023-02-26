@@ -1,3 +1,5 @@
-const url ="https://kids-art-app-backend.onrender.com/kidsart/"
+const baseUrl ="https://kids-art-app-backend.onrender.com"
+//const baseUrl = 'http://localhost:8000';
 
-export default url
+export const url =`${baseUrl}/kidsart/`;
+export const authUrl = `${baseUrl}/api/imagekit-auth`;

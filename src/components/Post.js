@@ -17,7 +17,8 @@ const Post = (props) => {
       <h1>{post.title}</h1>
     </Link>
     <h2>{post.description}</h2>
-    <h2>{post.image_url}</h2>
+    <h2>{post.image_url} </h2>
+    <img src={post.image_url} alt='kid'/>
   </div>
   );
 };
