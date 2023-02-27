@@ -6,34 +6,36 @@ const Show = (props) => {
 
   //style
   const div ={
-    textAlign: "center",
-    border: "3px solid",
+    //textAlign: "center",
+    //border: "3px solid",
+    fontSize: "50px",
     margin: "10px auto",
     width: "80%",
-    color: "blue"
+    color: "blue",
+    backgroundColor: "yellow"
   }
 
-
+//show
   return <div style={div}>
     <h1>{post.title}</h1>
       <h2>{post.description}</h2>
       <h2>{post.image_url}</h2>
       <div>
-        <h2>Update this piece of art</h2>
+        <h2>Edit artwork here</h2>
         <Form action={`/update/${post.id}`} method='post'>
       <input type="text" 
       name="title" 
-      placeholder="enter a title here" 
+      placeholder="Title" 
       defaultValue={post.title}
       />
       <input type="text" 
       name="description" 
-      placeholder="tell us about your work of art..." 
+      placeholder="Tell us about your artwork..." 
       defaultValue={post.description}
       />
       <input type="file" 
       name="url" 
-      placeholder="enter url here" 
+      //placeholder="enter url here" 
       //defaultValue={post.image_url}
       />
       <button>Submit</button>
@@ -43,7 +45,7 @@ const Show = (props) => {
       </Form>
       </div>
       <Link to="/">
-        <button>Go Back</button>
+        <button>Back to gallery</button>
       </Link>
     </div>
 };

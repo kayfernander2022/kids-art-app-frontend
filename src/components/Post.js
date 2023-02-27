@@ -5,11 +5,12 @@ const Post = (props) => {
 
   //style
   const div ={
-    textAlign: "center",
-    border: "3px solid",
+    //textAlign: "center",
+    //border: "3px solid",
     margin: "10px auto",
-    width: "80%",
-    color: "blue"
+    width: "75%",
+    color: "blue",
+    backgroundColor: "yellow"
   }
   return(
   <div style={div}>

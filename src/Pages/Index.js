@@ -6,7 +6,7 @@ import { authUrl } from '../url';
 
 const Index = (props) => {
   const kidsart = useLoaderData();
-  console.log(authUrl);
+  //console.log(authUrl);
   
   const [currImg, setCurrImg] = useState();
    
@@ -21,11 +21,11 @@ const Index = (props) => {
 
     return (<>
     <div style={{textAlign: "center"}}>
-      <h2>Create a art</h2>
+      <h2>Add your Masterpiece</h2>
       {currImg && <img src={currImg} alt='thumbnail'/>}
       <Form action='/create' method='post' encType="multipart/form-data">
-      <input type="text" name="title" placeholder="enter a title here"/>
-      <input type="text" name="description" placeholder="tell us about your work of art..."/>
+      <input type="text" name="title" placeholder="Title"/>
+      <input type="text" name="description" placeholder="Description"/>
       <input type="hidden" name="image_url" value={currImg} />
       <IKContext publicKey="public_33FjszinEBzlgrIz8+HbC3JVASM=" urlEndpoint="https://ik.imagekit.io/jfpi8d5c5/kidsart" authenticationEndpoint={authUrl}>
         <IKUpload
@@ -42,4 +42,3 @@ const Index = (props) => {
 };
 
 export default Index;
-// 28, 9-17, 19, update 24 remove enctype, update 27
