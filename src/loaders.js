@@ -12,7 +12,7 @@ export async function indexLoader(){
 
 
 //show loader
-//showLoader => get a single todo for Show route
+//showLoader => get a single art for Show route
 export const showLoader = async ({params}) => {
   const response = await fetch(url + params.id + "/")
   const data = await response.json()

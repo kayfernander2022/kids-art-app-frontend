@@ -41,7 +41,7 @@ export async function updateAction ({request, params}){
         description: formData.get("description"),
         image_url: formData.get("image_url")
     }
-
+    //console.log('updated json: ' + JSON.stringify(updatedKidsArt));
     // request to update route in backend
     await fetch(url + params.id + "/", {
         method: "put",
@@ -57,7 +57,7 @@ export async function updateAction ({request, params}){
 
 
 
-//deleteAction => delete art from form submissions to `/delete/:id`
+//deleteAction 
 export async function deleteAction({params}){
     // get art id
     const id = params.id

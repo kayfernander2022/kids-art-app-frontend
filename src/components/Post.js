@@ -14,11 +14,10 @@ const Post = (props) => {
   }
   return(
   <div style={div}>
-    <Link to={`/post/${post.id}`}>
+    <Link to={`/kidsart/${post.id}`}>
       <h1>{post.title}</h1>
     </Link>
     <h2>{post.description}</h2>
-    <h2>{post.image_url} </h2>
     <img src={post.image_url} alt='kid'/>
   </div>
   );

@@ -10,43 +10,35 @@ const Show = (props) => {
     //border: "3px solid",
     fontSize: "50px",
     margin: "10px auto",
-    width: "80%",
+    width: "90%",
     color: "blue",
     backgroundColor: "yellow"
   }
 
+  const buttonDiv={
+    backgroundColor: "red"
+  }
+
 //show
   return <div style={div}>
-    <h1>{post.title}</h1>
-      <h2>{post.description}</h2>
-      <h2>{post.image_url}</h2>
-      <div>
-        <h2>Edit artwork here</h2>
-        <Form action={`/update/${post.id}`} method='post'>
-      <input type="text" 
-      name="title" 
-      placeholder="Title" 
-      defaultValue={post.title}
-      />
-      <input type="text" 
-      name="description" 
-      placeholder="Tell us about your artwork..." 
-      defaultValue={post.description}
-      />
-      <input type="file" 
-      name="url" 
-      //placeholder="enter url here" 
-      //defaultValue={post.image_url}
-      />
-      <button>Submit</button>
-      </Form>
-      <Form action={`/delete/${post.id}`} method="post">
-        <button>Delete</button>
-      </Form>
-      </div>
-      <Link to="/">
-        <button>Back to gallery</button>
+    <div>
+      <Link to={`/update/${post.id} `} >
+              <button style={buttonDiv}>Update</button>
       </Link>
+      </div>
+      <div>
+      <span>{post.title}</span> <br/>
+      <span style={{'fontSize':'26px'}}>{post.description}</span><br/>
+      <img src={post.image_url} alt="artwork"></img>
+      </div>
+      <div>
+      <Form action={`/delete/${post.id}`} method="post">
+              <button style={buttonDiv}>Delete</button>
+            </Form>
+            <Link to="/">
+              <button style={buttonDiv}>Back</button>
+            </Link>
+      </div>
     </div>
 };
 
