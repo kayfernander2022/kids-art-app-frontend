@@ -11,6 +11,7 @@ The Kids Art App is a React frontend application where the user can store an ima
 - django
 - CSS
 - imageKit.io
+- emojipedia.org
 
 ### Component Architecture
 

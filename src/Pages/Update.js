@@ -27,7 +27,8 @@ const Update = (props) => {
     margin: "10px auto",
     width: "90%",
     color: "blue",
-    backgroundColor: "yellow"
+    backgroundColor: "yellow",
+    borderRadius: "25px"
   }
 
   const buttonDiv={
@@ -71,7 +72,7 @@ const Update = (props) => {
       <Link to="/">
         <button style={buttonDiv}>Back</button>
       </Link>
-      
+
     </div>
 };
 

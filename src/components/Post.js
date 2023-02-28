@@ -10,7 +10,8 @@ const Post = (props) => {
     margin: "10px auto",
     width: "75%",
     color: "blue",
-    backgroundColor: "yellow"
+    backgroundColor: "yellow",
+    borderRadius: "25px"
   }
   return(
   <div style={div}>

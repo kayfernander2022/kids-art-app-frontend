@@ -22,7 +22,8 @@ const CreateArt = (props) => {
     margin: "10px auto",
     width: "90%",
     color: "blue",
-    backgroundColor: "yellow"
+    backgroundColor: "yellow",
+    borderRadius: "25px"
   }
   const buttonDiv={
     backgroundColor: "red"
