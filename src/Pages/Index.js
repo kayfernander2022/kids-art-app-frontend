@@ -11,7 +11,7 @@ const Index = (props) => {
   }
 
     return (<>
-    <div style={{textAlign: "center"}}>
+    <div>
     <Link to={`/create`}>
       <button style={buttonDiv}>Add new</button>
     </Link>

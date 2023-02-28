@@ -19,7 +19,7 @@ const Show = (props) => {
     backgroundColor: "red"
   }
 
-//show
+//Show each
   return <div style={div}>
     <div>
       <Link to={`/update/${post.id} `} >
@@ -27,7 +27,7 @@ const Show = (props) => {
       </Link>
       </div>
       <div>
-      <span>{post.title}</span> <br/>
+      <span style={{"text-shadow": "2px 2px 5px grey"}}>{post.title}</span> <br/>
       <span style={{'fontSize':'26px'}}>{post.description}</span><br/>
       <img src={post.image_url} alt="artwork"></img>
       </div>

@@ -33,12 +33,13 @@ const Update = (props) => {
   const buttonDiv={
     backgroundColor: "red"
   }
-
+//update entry
   return <div style={div}>
     <h1>{post.title}</h1>
       <h2>{post.description}</h2>
       <img src={post.image_url} alt='artwork'></img>
       <div>
+
         <h1>Edit Artwork </h1>
         <Form action={`/update/${post.id}`} method='post'>
       <input type="text" 
@@ -61,13 +62,16 @@ const Update = (props) => {
       <input type="hidden" name="image_url" value={currImg} />
       <button style={buttonDiv}>Submit</button>
       </Form>
+
       <Form action={`/delete/${post.id}`} method="post">
         <button style={buttonDiv}>Delete</button>
       </Form>
       </div>
+
       <Link to="/">
         <button style={buttonDiv}>Back</button>
       </Link>
+      
     </div>
 };
 

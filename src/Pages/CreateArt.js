@@ -27,8 +27,8 @@ const CreateArt = (props) => {
   const buttonDiv={
     backgroundColor: "red"
   }
-//style={{textAlign: "center"}}
- //
+
+ 
   return(<>
   <div style={div}>
   <h2>Add your Masterpiece</h2>
