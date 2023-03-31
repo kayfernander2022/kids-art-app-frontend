@@ -2,7 +2,7 @@
 
 The Kids Art App is a React frontend application where the user can store an image and description of their childs artwork to display to friends and family.
 
-### [Link to Kids Art App](kids-art-app-frontend.netlify.app)
+### [Link to Kids Art App](https://kids-art-app-frontend.netlify.app)
 
 ### Technologies Used
 
